@@ -6,7 +6,9 @@ export const queryClient = new QueryClient();
 
 export default function ReactQueryClientProvider({
   children,
-}: React.PropsWithChildren) {
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
   );
