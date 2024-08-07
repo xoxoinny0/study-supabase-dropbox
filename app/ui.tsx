@@ -5,6 +5,7 @@ import Logo from "./components/logo";
 import SearchComponent from "./components/search-component";
 import { useState } from "react";
 import FileDragDropzone from "./components/file-dragdropzone";
+import DropboxImageList from "./components/dropbox-image-list";
 
 export default function UI() {
   const [searchInput, setSearchInput] = useState("");
@@ -17,6 +18,7 @@ export default function UI() {
       />
 
       <FileDragDropzone />
+      <DropboxImageList />
     </main>
   );
 }
